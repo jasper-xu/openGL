@@ -114,7 +114,8 @@ GLfloat gCubeVertexData[216] =
     view.context = self.context;
 	//	采用24位真彩色
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
-    
+	
+	//	启动openGL
     [self setupGL];
 }
 
