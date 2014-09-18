@@ -281,14 +281,19 @@ GLfloat gCubeVertexData[216] =
     if (![self linkProgram:_program]) {
         NSLog(@"Failed to link program: %d", _program);
         
+		//	删除顶点shader
         if (vertShader) {
             glDeleteShader(vertShader);
             vertShader = 0;
         }
+		
+		//	删除像素shader
         if (fragShader) {
             glDeleteShader(fragShader);
             fragShader = 0;
         }
+		
+		//	删除shader容器
         if (_program) {
             glDeleteProgram(_program);
             _program = 0;
