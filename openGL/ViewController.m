@@ -302,8 +302,8 @@ GLfloat gCubeVertexData[216] =
         return NO;
     }
     
-    // Get uniform locations.
-    uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX] = glGetUniformLocation(_program, "modelViewProjectionMatrix");
+    // Get uniform locations.c
+    uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX] = glGetUniformLocation(_program, "modelViewProjectionMatrix");	//	设置
     uniforms[UNIFORM_NORMAL_MATRIX] = glGetUniformLocation(_program, "normalMatrix");
     
     // Release vertex and fragment shaders.
